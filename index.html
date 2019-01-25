@@ -9,9 +9,9 @@
 
     <div class="clock">
       <div class="clock-face">
-        <div class="hand hour-hand"></div>
-        <div class="hand min-hand"></div>
-        <div class="hand second-hand"></div>
+        <div id="hour" class="hand hour-hand"></div>
+        <div id="min" class="hand min-hand"></div>
+        <div id="second" class="hand second-hand"></div>
       </div>
     </div>
 
@@ -69,6 +69,18 @@
       transition-timing-function: cubic-bezier(0.1,2.7,0.58,1)
     }
 
+    #second {
+      background: red !important;
+    }
+
+    #min {
+      background: #59727d !important;
+    }
+
+    #hour {
+      width: 100px;
+      transform-origin: 125%;
+    }
 
   </style>
 
